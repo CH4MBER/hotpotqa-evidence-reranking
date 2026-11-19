@@ -1,0 +1,14 @@
+# Platform-independent project dependencies.
+# PyTorch is intentionally not pinned here: the correct binary depends on
+# the GPU, NVIDIA driver, operating system, and cloud runtime.
+# On cloud GPU environments, first check the preinstalled torch build.
+
+datasets>=4.0,<6
+sentence-transformers>=5.0,<7
+numpy>=1.26,<3
+rank-bm25>=0.2.2
+accelerate>=1.0
+scikit-learn>=1.4
+pandas>=2.1
+matplotlib>=3.8
+tqdm>=4.66

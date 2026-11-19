@@ -1,0 +1,89 @@
+# ============================================================
+# COMS 4705 — Evidence Reranking
+# Commit source code, README, requirements, and curated reports.
+# Keep local data, checkpoints, training outputs, and caches out
+# of the Git repository by default.
+# ============================================================
+
+# Python virtual environments and interpreter artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Python/tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+.ipynb_checkpoints/
+.cache/
+.huggingface/
+.torch/
+.coverage
+.coverage.*
+htmlcov/
+
+# Hugging Face and sentence-transformers caches, if relocated
+**/hub/models--*/
+**/sentence_transformers/
+
+# Raw and derived datasets (may contain hundreds of MB / GB)
+/datasets/
+/data/
+
+# Model/checkpoint/output artifacts (may be many GB)
+/outputs/
+/models/
+/checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+pytorch_model.bin
+optimizer.pt
+scheduler.pt
+trainer_state.json
+
+# TensorBoard event logs, generated runtime files
+/events.out.tfevents.*
+events.out.tfevents.*
+*.log
+*.log.*
+*.tmp
+*.temp
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local scratch/debug exports; use reports/ for curated plots/tables
+/scratch/
+/tmp/
+/temp/
+
+# Keep paper / milestone assets under reports/ (not ignored).
+# Example: reports/final/FINAL_TEST_RESULTS.md
